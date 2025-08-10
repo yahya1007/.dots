@@ -19,8 +19,8 @@ mvp() {
         # append `.` to prevent `dirname` from returning parent dir
         dest="$dest/."
     fi
-    mkdir -p -- "$(dirname -- "$dest")" &&
-    mv "$@"
+    doas mkdir -p -- "$(dirname -- "$dest")" &&
+    doas  mv "$@"
 }
 # Move the file or directory
 mvp  "$SOURCE" "$DESTINATION"
