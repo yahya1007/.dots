@@ -1,0 +1,26 @@
+#!/bin/bash
+# function to move files and directories
+SOURCE="$1"          # First argument: source file or directory
+DESTINATION="$2"     # Second argument: destination directory
+mvp() {
+    n=0 endofargs=
+    for arg; do
+        if [ -n "$endofargs" ] || [ "${arg#-}" = "$arg" ]; then
+            # dest will be set to last non-option arg
+            n=$((n+1)) dest=$arg
+        elif [ "$arg" = '--' ]; then
+            endofargs=1
+        fi
+    done
+    # dest is a dir to be created
+    # if there are multiple src files
+    # or if target ends with "/"
+    if [ "$n" -gt 2 ] || [ "${dest%/}" != "$dest" ]; then
+        # append `.` to prevent `dirname` from returning parent dir
+        dest="$dest/."
+    fi
+    mkdir -p -- "$(dirname -- "$dest")" &&
+    mv "$@"
+}
+# Move the file or directory
+mvp  "$SOURCE" "$DESTINATION"
