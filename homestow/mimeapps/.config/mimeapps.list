@@ -1,0 +1,15 @@
+# Default app /usr/share/applications/
+[Default Applications]
+text/html=chromium.desktop;
+application/pdf=org.pwmt.zathura-pdf-poppler.desktop;
+image/jpeg=nsxiv.desktop;
+text/plain=vim.desktop;
+video/mp4=vlc.desktop;
+
+
+[Added Associations]
+application/json=vim.desktop;
+text/plain=vim.desktop;
+
+[Removed Associations]
+application/xml=gedit.desktop;
