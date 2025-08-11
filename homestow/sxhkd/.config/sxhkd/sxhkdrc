@@ -2,7 +2,7 @@ super  + Escape
 	pkill -USR1 -x sxhkd
 
 super + alt + b 
-	chromium
+    $BROWSER	
 
 super + shift + Escape 
   sh -c '/home/yahya/.local/bin/exit.sh'
@@ -20,4 +20,4 @@ F5
   backlight down
 
 super + alt + f
-  krusader
+ pcmanfm 
