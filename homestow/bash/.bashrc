@@ -75,4 +75,3 @@ alias clnu='doas pacman -R $(unused)'
 alias clnc='rm -rf ~/.cache/*'
 alias clnt='rm -rf ~/Trash/'
 
-

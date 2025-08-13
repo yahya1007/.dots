@@ -104,7 +104,7 @@ map c
 map d
 map m
 
-map co $vscodium "$f"
+map RCC$vscodium "$f"
 map cf $dotbare fadd -f
 
 map au unarchive
@@ -128,10 +128,10 @@ map C clear
 
 # Movement
 map gc cd ~/.config
-map gD cd ~/documents
-map gd cd ~/downloads
-map gp cd ~/pictures
+map gD cd ~/Documents
+map gd cd ~/Downloads
+map gp cd ~/Pictures
 map gr cd ~/repos
-map gv cd ~/videos
+map gv cd ~/Videos
 map gs cd ~/.local/bin
 map gt cd ~/.local/share/Trash/files
