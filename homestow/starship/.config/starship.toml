@@ -3,8 +3,9 @@ success_symbol = "[❯](bold #5e81ac)"
 error_symbol = "[✗](#bf616a)"
 
 [directory]
-format = "[$path]($style fg:#5e81ac) "
-read_only = " "
+format = "[$path]($style fg:#5e81ac)[$read_only]($read_only_style) "
+read_only = "    "
+read_only_style = "green"
 
 [cmd_duration]
 format = '[ $duration ]($style fg:#4c566a)'
