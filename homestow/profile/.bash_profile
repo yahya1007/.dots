@@ -3,7 +3,7 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-export BROWSER="thorium-browser"
+export BROWSER="chromium"
 export TERMINAL="st"
 export TERM="st"
 export READER="zathura"
