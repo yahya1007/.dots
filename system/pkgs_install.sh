@@ -39,56 +39,54 @@ PACKAGES=(
 doas pacman -Sy
 
 # Install each package
-for pkg in "${PACKAGES[@]}"; do
-    echo "Installing $pkg..."
-   # sudo pacman -S --noconfirm --needed "$pkg"
-    doas pacman -S "$pkg"
-done
+#for pkg in "${PACKAGES[@]}"; do
+#    echo "Installing $pkg..."
+#    sudo pacman -S --noconfirm --needed "$pkg"
+#done
 
 echo "Packages installation complete."
 
 PACKFONTS=(
     "ttf-jetbrains-mono-nerd"
-   # "ttf-carlito"
-   # "ttf-roboto"
-   # "ttf-roboto-mono"
-   # "ttf-dejavu"
-   # "ttf-libertinus"
+    "ttf-carlito"
+    "ttf-roboto"
+    "ttf-roboto-mono"
+    "ttf-dejavu"
+    "ttf-libertinus"
     "noto-fonts"
     "noto-fonts-emoji"
-   # "ttf-opensans"
-   # "ttf-droid"
-   # "ttf-font-awesome"
-   # "ttf-caladea"
+    "ttf-opensans"
+    "ttf-droid"
+    "ttf-font-awesome"
+    "ttf-caladea"
   )
 # Install each font  package
 for pkg in "${PACKFONTS[@]}"; do
     echo "Installing $pkg..."
-   # sudo pacman -S --noconfirm --needed "$pkg"
-    doas pacman -S "$pkg"
+    sudo pacman -S --noconfirm --needed "$pkg"
 done
 
 echo "Fonts Packages installation complete."
 
 
-git clone https://github.com/yahya1007/suckless.git
+#git clone https://github.com/yahya1007/suckless.git
 
 
-PACKPRINTER=(
-    "cups"
-    "hplip
-    "system-config-printer"
-#sudo usermod -aG lp yahya
-#sudo systemctl enable --now cups
-)
-
-git clone https://aur.archlinux/yay.git
-yay -S betterlockscreen
-sudo systemctl enable betterlockscreen@yahya
-
-# file manager
-nemo
-lxappearance # for GTK app 
-qt5ct # for Qt app
-# mask dev-tmp
-sudo systemctl mask dev-tpmrm0.device
+#PACKPRINTER=(
+#    "cups"
+#    "hplip
+#    "system-config-printer"
+##sudo usermod -aG lp yahya
+##sudo systemctl enable --now cups
+#)
+#
+#git clone https://aur.archlinux/yay.git
+#yay -S betterlockscreen
+#sudo systemctl enable betterlockscreen@yahya
+#
+## file manager
+#nemo
+#lxappearance # for GTK app 
+#qt5ct # for Qt app
+## mask dev-tmp
+#sudo systemctl mask dev-tpmrm0.device
