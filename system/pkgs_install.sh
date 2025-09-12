@@ -30,19 +30,20 @@ PACKAGES=(
     "pavucontrol"
     "nsxiv"
     "mpv"
-    "xorg-xev"
-    "python3"
     "brightnessctl"
+    "stow"
+    #"xorg-xev"
+    #"python3"
 )
 
 # Update package repositories
 doas pacman -Sy
 
 # Install each package
-#for pkg in "${PACKAGES[@]}"; do
-#    echo "Installing $pkg..."
-#    sudo pacman -S --noconfirm --needed "$pkg"
-#done
+for pkg in "${PACKAGES[@]}"; do
+    echo "Installing $pkg..."
+    sudo pacman -S --noconfirm --needed "$pkg"
+done
 
 echo "Packages installation complete."
 
