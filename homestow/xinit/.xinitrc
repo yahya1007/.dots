@@ -5,7 +5,7 @@ numlockx &
 dunst &
 
 #Keymap
-setxkbmap -model pc103  -layout fr,ara -variant azerty,azerty -option grp:shifts_toggle caps:escape altwin:menu_win
+setxkbmap -model pc103  -layout fr,ara -variant azerty,azerty -option grp:alt_shift_toggle caps:escape altwin:menu_win
 
 #DWM statusBar
 slstatus &
