@@ -9,3 +9,5 @@
 	helper = !/usr/bin/gh auth git-credential
 [init]
 	defaultBranch = main
+[core]
+	excludesfile = /home/yahya/.gitignore_global
